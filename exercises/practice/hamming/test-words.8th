@@ -1,7 +1,7 @@
 needs console/loaded
 
-: isword?  \ x -- x f
-   dup  >kind  ns:w   n:= 
+: isword?  \ x -- x T
+   ns:w  isa? 
 ;
 
 : test_eq \ s x w -- | s w x --
